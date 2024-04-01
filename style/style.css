@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("./../font/Mona-Sans.woff2") format("woff2-variations");
+}
+
+html {
+  font-family: "Mona Sans";
+}
+
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #010409;
+  border-bottom: 1px solid #30363d;
+  margin-bottom: 0.25rem;
+}
+
+.headerContainer {
+  width: 98vw;
+  max-width: 1024px;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  h1{
+    font-size: x-large;
+  }
+  a{
+    font-size: x-large;
+    color: #e6edf3;
+  }
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction {
+  width: 98vw;
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid #30363d;
+  border-radius: 0.375rem;
+  margin: 0.25rem auto;
+  padding: 1rem;
+
+  .howtocontributeLink {
+    background-color: #238636;
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 1rem;
+  }
+  a {
+    display: inline-block;
+    color: #e6edf3;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+}
+
+.listContributors {
+  border: 1px solid #30363d;
+  border-radius: 0.375rem;
+  margin: 0.5rem auto;
+  width: 98vw;
+  max-width: 1024px;
+  padding: 1rem;
+  flex-grow: 1;
+  ul {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    li {
+      border: 1px solid #30363d;
+      border-radius: 0.375rem;
+      margin: 0.25rem auto;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+      .contributorBadge {
+        i {
+          font-size: 1.5rem;
+          margin-left: 0.25rem;
+          position: relative;
+          top: 0.15rem;
+          color: #e6edf3;
+        }
+        .contributorName {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.contributionGuide {
+  border: 1px solid #30363d;
+  border-radius: 0.375rem;
+  margin: 0.5rem auto;
+  width: 98vw;
+  max-width: 1024px;
+  padding: 1rem;
+  ul {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    li {
+      padding: 1rem 0rem;
+      a {
+        display: inline-block;
+        color: #238636;
+        margin: 0.25rem;
+      }
+      .cmd {
+        color: #238636;
+        background-color: #161b22;
+        padding: 0.5rem 0.75rem;
+      }
+      img{
+        width: 100%;
+        max-width: fit-content;
+      }
+      .warning{
+        color: orangered
+      }
+    }
+  }
+}
